@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Paint</title>
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
+  <link href="paint.css" rel="stylesheet" type="text/css" />
+  <script src="paint.js"></script>
+</head>
+
+<body onload="html_loaded()">
+
+  <button type="button" name="button" onclick="red_color()" class="redColor"></button>
+
+  <button type="button" name="button" onclick="blue_color()" class="blueColor"></button>
+  
+  <button type="button" name="button" onclick="green_color()" class="greenColor"></button>
+
+  <button type="button" name="button" onclick="black_color()" class="black"></button>
+
+  <p>Kynän ja kumin koko</p>
+  <div class="slidecontainer">
+    <input type="range" min="1" max="100" value="50" class="slider" id="sliderID">
+  </div>
+  <p id="pencilSize"></p>
+  
+</body>
+
+</html>
